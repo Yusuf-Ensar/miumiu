@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U Are My Heart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>U Are My Heart</h1>
+        <button class="start-button">I love U</button>
+        <p>I'm sorry for hurting you.</p>
+    </div>
+    <div class="game-screen" style="display: none;">
+        <div class="heart-container">
+            <div class="heart-pieces">
+                <!-- Heart pieces will be added dynamically -->
+            </div>
+            <div class="other-images">
+                <!-- Other images will be added dynamically -->
+            </div>
+        </div>
+        <div class="message">
+            <!-- Apology message will appear here -->
+        </div>
+        <div class="broken-heart" style="display: none;"></div>
+    </div>
+    <!-- Add the audio file with a local path -->
+    <audio id="completion-music" src="audio/completion-music.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

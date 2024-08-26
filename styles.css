@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.start-screen {
+    text-align: center;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.game-screen {
+    text-align: center;
+    position: relative;
+}
+
+.heart-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.heart-pieces, .other-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heart-piece, .other-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#heart-piece-1 { background-image: url('heart_piece_1.png'); }
+#heart-piece-2 { background-image: url('heart_piece_2.png'); }
+#heart-piece-3 { background-image: url('heart_piece_3.png'); }
+#heart-piece-4 { background-image: url('heart_piece_4.png'); }
+
+.message {
+    font-size: 1.2em;
+    color: #d9534f;
+    position: absolute;
+    top: calc(50% + 210px); /* Position message below the broken heart */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevent line breaks */
+    display: none; /* Initially hidden, will be shown in JS */
+}
+
+.broken-heart {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    background: url('broken_heart.png') no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
